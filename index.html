@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qussai Dababna | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>Qussai Dababna</h1>
+        <p class="subtitle">
+          Electrical Engineering and Computer Science<br />
+          University of Michigan
+        </p>
+      </div>
+      <div class="contact">
+        <a href="mailto:qdababna@umich.edu">qdababna@umich.edu</a>
+        <a href="https://www.linkedin.com/in/qussai03" target="_blank" rel="noopener">
+          linkedin.com/in/qussai03
+        </a>
+        <span>(734) 686 - 9408</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="intro">
+      <h2>Projects</h2>
+      <p>
+        A selection of robotics, embedded systems, and digital design projects
+        showcasing hands-on experience with microcontrollers, FPGAs, and real-time systems.
+      </p>
+    </section>
+
+    <!-- Project 1: Talking Robot -->
+    <section class="project-card">
+      <div class="project-header">
+        <h3>TALKING ROBOT (CHAT2-D2)</h3>
+        <span class="tag">Robotics · Embedded · AI</span>
+      </div>
+
+      <div class="project-images">
+        <!-- Placeholder images – replace src with your real images later -->
+        <img
+          src="https://via.placeholder.com/400x260?text=CHAT2-D2+1"
+          alt="Talking Robot placeholder 1"
+          class="project-image"
+        />
+        <img
+          src="https://via.placeholder.com/400x260?text=CHAT2-D2+2"
+          alt="Talking Robot placeholder 2"
+          class="project-image"
+        />
+        <img
+          src="https://via.placeholder.com/400x260?text=CHAT2-D2+3"
+          alt="Talking Robot placeholder 3"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <div class="project-section">
+          <h4>What?</h4>
+          <p>
+            Built a talking robot (CHAT2-D2) that tracks a user, maintains eye contact,
+            and converses via text-to-speech.
+          </p>
+        </div>
+        <div class="project-section">
+          <h4>How?</h4>
+          <ul>
+            <li>Captured keystrokes on an STM32 using a PS/2 keyboard and displayed them on a character LCD (bit-banging).</li>
+            <li>Sent prompts over Bluetooth to a Raspberry Pi running OpenAI’s API and Google TTS.</li>
+            <li>Used thermal-sensor data to pivot the head toward the user.</li>
+          </ul>
+        </div>
+        <div class="project-section">
+          <h4>Results</h4>
+          <ul>
+            <li>Seamless back-and-forth conversation with minimal input delay.</li>
+            <li>Smooth, continuous user tracking and maintained eye contact.</li>
+            <li>Reliable long-duration operation without intervention.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 2: Obstacle Avoiding Robot -->
+    <section class="project-card">
+      <div class="project-header">
+        <h3>OBSTACLE AVOIDING ROBOT</h3>
+        <span class="tag">Robotics · Arduino</span>
+      </div>
+
+      <div class="project-images">
+        <img
+          src="https://via.placeholder.com/400x260?text=Robot+1"
+          alt="Obstacle avoiding robot placeholder 1"
+          class="project-image"
+        />
+        <img
+          src="https://via.placeholder.com/400x260?text=Robot+2"
+          alt="Obstacle avoiding robot placeholder 2"
+          class="project-image"
+        />
+        <img
+          src="https://via.placeholder.com/400x260?text=Robot+3"
+          alt="Obstacle avoiding robot placeholder 3"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <div class="project-section">
+          <h4>What?</h4>
+          <p>
+            Built an Arduino-controlled obstacle-avoiding robot using sensors for autonomous navigation.
+          </p>
+        </div>
+        <div class="project-section">
+          <h4>How?</h4>
+          <ul>
+            <li>Programmed Arduino for obstacle detection and path adjustment.</li>
+            <li>Calibrated and tested sensors for accurate readings.</li>
+            <li>Applied debounce logic to minimize noise and false triggers.</li>
+            <li>Optimized power management for stable long-term operation.</li>
+          </ul>
+        </div>
+        <div class="project-section">
+          <h4>Results</h4>
+          <ul>
+            <li>Achieved reliable obstacle avoidance with smooth navigation.</li>
+            <li>Minimized false triggers for more accurate sensor performance.</li>
+            <li>Maintained stable robot behavior with efficient power usage.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 3: Plant Irrigation System -->
+    <section class="project-card">
+      <div class="project-header">
+        <h3>PLANT IRRIGATION SYSTEM</h3>
+        <span class="tag">Embedded · IoT</span>
+      </div>
+
+      <div class="project-images">
+        <img
+          src="https://via.placeholder.com/400x260?text=Irrigation+1"
+          alt="Plant irrigation system placeholder 1"
+          class="project-image"
+        />
+        <img
+          src="https://via.placeholder.com/400x260?text=Irrigation+2"
+          alt="Plant irrigation system placeholder 2"
+          class="project-image"
+        />
+        <img
+          src="https://via.placeholder.com/400x260?text=Irrigation+3"
+          alt="Plant irrigation system placeholder 3"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <div class="project-section">
+          <h4>What?</h4>
+          <p>
+            Built an automated plant irrigation system using moisture sensors, a
+            submersible pump, and a microcontroller for precise soil-based watering.
+          </p>
+        </div>
+        <div class="project-section">
+          <h4>How?</h4>
+          <ul>
+            <li>Integrated moisture sensors with an Arduino to monitor soil conditions.</li>
+            <li>Programmed microcontroller logic to control pump activation based on real-time data.</li>
+          </ul>
+        </div>
+        <div class="project-section">
+          <h4>Results</h4>
+          <ul>
+            <li>Consistent hydration with minimal manual effort.</li>
+            <li>Optimized water usage based on real-time soil moisture.</li>
+            <li>Maintained healthy plant growth through precise irrigation control.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 4: 4-Function Calculator FPGA -->
+    <section class="project-card">
+      <div class="project-header">
+        <h3>4-FUNCTION CALCULATOR ON FPGA</h3>
+        <span class="tag">FPGA · Verilog</span>
+      </div>
+
+      <div class="project-images">
+        <img
+          src="https://via.placeholder.com/400x260?text=FPGA+1"
+          alt="FPGA calculator placeholder 1"
+          class="project-image"
+        />
+        <img
+          src="https://via.placeholder.com/400x260?text=FPGA+2"
+          alt="FPGA calculator placeholder 2"
+          class="project-image"
+        />
+        <img
+          src="https://via.placeholder.com/400x260?text=FPGA+3"
+          alt="FPGA calculator placeholder 3"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <div class="project-section">
+          <h4>What?</h4>
+          <p>
+            Built a four-function calculator (addition, subtraction, division,
+            multiplication) on an Altera DE2-115 FPGA board.
+          </p>
+        </div>
+        <div class="project-section">
+          <h4>How?</h4>
+          <ul>
+            <li>Created a state diagram and implemented functionality in Verilog.</li>
+            <li>Developed a user-friendly interface using onboard switches and 7-segment displays.</li>
+            <li>Wrote test benches and debugged behavior using ModelSim.</li>
+          </ul>
+        </div>
+        <div class="project-section">
+          <h4>Results</h4>
+          <ul>
+            <li>Performed all four arithmetic functions with accurate outputs.</li>
+            <li>Responsive user interface with real-time visual updates.</li>
+            <li>Passed all test cases with reliable performance in simulation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Qussai Dababna</p>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close image">&times;</button>
+      <img id="lightbox-img" src="" alt="Expanded project image" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
