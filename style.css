@@ -253,6 +253,27 @@ html, body {
   cursor: pointer;
 }
 
+.project-video {
+  margin-top: 16px;
+}
+
+.video-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, var(--purple-start), var(--purple-end));
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-weight: 500;
+}
+
+.video-btn:hover {
+  transform: scale(1.04);
+  opacity: 0.9;
+}
+
 #lightbox-img {
   max-width: 90vw;
   max-height: 80vh;
