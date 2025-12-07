@@ -152,26 +152,28 @@ html, body {
 /* Project images */
 .project-images {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 12px;
   margin-bottom: 18px;
 }
 
+
 .project-image {
   width: 100%;
-  height: 260px;          /* Keep consistent size */
-  object-fit: contain;    /* Show whole image without cropping */
-  border-radius: 12px;
-  background: #f2f3f7;    /* Light background for aspect gaps */
-  padding: 6px;           /* Space around photo */
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: none;      /* remove gray/white box */
+  padding: 0;            /* remove padding space */
+  box-shadow: none;      /* remove fake border look */
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
+
+
 .project-image:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-  border-color: rgba(90, 255, 214, 0.9);
+  transform: scale(1.02);
 }
 
 /* Project body: What / How / Results */
